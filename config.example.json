@@ -1,0 +1,8 @@
+{
+  "webhook": "https://open.feishu.cn/open-apis/bot/v2/hook/在此填入你的机器人地址",
+  "secret": "",
+  "feeds": "catalog",
+  "groups": [],
+  "perFeedLimit": 5,
+  "title": "财经资讯摘要"
+}

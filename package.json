@@ -1,0 +1,25 @@
+{
+  "name": "feishu-finance-digest",
+  "version": "0.1.0",
+  "description": "Push new finance RSS articles to a Feishu group bot as digest message cards",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "start": "node esbuild.config.mjs && node dist/digest-bot.cjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.16",
+    "jsdom": "^30.0.1"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.4.1",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.4.5",
+    "vitest": "^5.0.0"
+  }
+}
