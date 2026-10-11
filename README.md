@@ -2,7 +2,7 @@
 
 把 31 个人工核验过的财经 RSS 源的新文章，定时以消息卡片推送到飞书群。
 
-源目录与 RSS/Atom 解析移植自 [Stocks AI RSS](https://github.com/Serennity007/serenity-stock-rss)（commit `e04a6f3`，其本身是 [Qiaomu AI RSS](https://github.com/joeseesun/qiaomu-ai-rss) 的财经分叉）。本仓库是独立工具：上游解析层的后续修复需手工同步。
+源目录与 RSS/Atom 解析移植自 [Stocks AI RSS](https://github.com/Serennity007/serenity-stock-rss)（commit `e04a6f3`，彼时内置目录为 31 源）。本仓库是独立工具：上游解析层的后续修复需手工同步。
 
 ## 工作原理
 
@@ -57,4 +57,4 @@ schtasks /create /tn "FeishuFinanceDigest" /sc minute /mo 30 /tr "cmd /c cd /d C
 npm run check   # tsc + vitest + 构建
 ```
 
-许可证：GPL-3.0-only（派生自 Stocks AI RSS / Qiaomu AI RSS）。内置源目录 `src/data/finance-feeds.json` 为 CC0。
+许可证：GPL-3.0-only。来源与版权声明见 [LICENSE](LICENSE)；内置源目录 `src/data/finance-feeds.json` 为 CC0。
