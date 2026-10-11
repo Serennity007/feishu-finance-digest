@@ -672,3 +672,15 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+
+---
+
+以下为附加声明，不属于上方 GPL 许可证正文。
+Additional notices below; they are not part of the GPL text above.
+
+## 来源与版权声明 / Source and copyright notice
+
+本仓库的源目录与 RSS/Atom 解析层移植自 [Stocks AI RSS](https://github.com/Serennity007/serenity-stock-rss)（commit `e04a6f3`，GPL-3.0-only），后者基于 [向阳乔木 (@joeseesun)](https://github.com/joeseesun) 的 [Qiaomu AI RSS](https://github.com/joeseesun/qiaomu-ai-rss) v0.26.2 改造。上述上游代码的版权归原作者所有；本仓库的修改部分版权归仓库作者 Pasteliangzhengtao 所有。内置源目录 `src/data/finance-feeds.json` 为 CC0。
+
+The feed catalog and RSS/Atom parsing layer are ported from Stocks AI RSS (commit e04a6f3, GPL-3.0-only), itself derived from Qiaomu AI RSS v0.26.2 by 向阳乔木 (@joeseesun). The upstream code remains copyright its authors; the modifications here are copyright Pasteliangzhengtao. The bundled feed catalog `src/data/finance-feeds.json` is CC0.
