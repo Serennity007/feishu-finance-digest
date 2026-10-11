@@ -41,7 +41,7 @@ npm start -- --dry-run
 ## 定时运行（Windows 任务计划）
 
 ```powershell
-schtasks /create /tn "FeishuFinanceDigest" /sc minute /mo 30 /tr "cmd /c cd /d C:\Users\ztl\.zcode\workspace\default\feishu-finance-digest && node dist\digest-bot.cjs >> bot.log 2>&1"
+schtasks /create /tn "FeishuFinanceDigest" /sc minute /mo 30 /tr "cmd /c cd /d C:\path\to\feishu-finance-digest && node dist\digest-bot.cjs >> bot.log 2>&1"
 ```
 
 每 30 分钟运行一次，日志追加到 `bot.log`。电脑关机/睡眠期间不推送，唤醒后的下一轮会补推未见过的新文章。
